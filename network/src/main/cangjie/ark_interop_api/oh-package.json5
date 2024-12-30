@@ -1,5 +1,5 @@
 {
-  "name": "libark_interop_api.so",
+  "name": "libnetwork_api.so",
   "types": "./ark_interop_api.d.ts",
   "version": "1.0.0",
   "description": ""

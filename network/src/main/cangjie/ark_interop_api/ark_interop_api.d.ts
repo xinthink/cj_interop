@@ -1,3 +1,3 @@
-export declare interface CustomLib {
+export declare interface NetworkLib {
     sayHello(): void
 }

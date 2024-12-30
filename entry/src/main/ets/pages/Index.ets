@@ -1,7 +1,7 @@
-import {requireCJLib} from "libark_interop_loader.so"
-import {CustomLib} from "libark_interop_api.so"
+import { requireCJLib } from "libark_interop_loader.so"
+import { NetworkLib } from "libnetwork_api.so"
 
-const cjNetwork: CustomLib = requireCJLib("libark_interop_api.so") as CustomLib
+const libNetwork: NetworkLib = requireCJLib("libohos_app_cangjie_network.so") as NetworkLib
 
 @Entry
 @Component
@@ -19,7 +19,7 @@ struct Index {
           middle: { anchor: '__container__', align: HorizontalAlign.Center }
         })
         .onClick(_ => {
-          cjNetwork.sayHello()
+          libNetwork.sayHello()
         })
     }
     .height('100%')
